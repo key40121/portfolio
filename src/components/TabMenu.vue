@@ -89,7 +89,7 @@ a {
   top: 0;
   width: 100%;
   height: 100%;
-  color: white;
+  color: blue;
   text-decoration: none;
   line-height: 50px;
 }
