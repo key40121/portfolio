@@ -1,4 +1,5 @@
 <template>
+  
   <header>
     <ol>
       <li v-for="(item, index) in items" :key=index>
