@@ -27,7 +27,8 @@
           {
             key: 'Python',
             exp: 'Django, 機械学習',
-            value: 'アルゴリズムとデータ構造を学びました.　Django，機械学習についても学んでおり，アプリ作成中です．',
+            value: `アルゴリズムとデータ構造を学びました.　
+            Django，機械学習についても学んでおり，アプリ作成中です．`,
           },
           {
             key: 'C & C++',
@@ -36,7 +37,8 @@
           {
             key: 'HTML & CSS',
             exp: 'Bootstrap4',
-            value:'このホームページを創りました．　bootstrapを組み合わせました．'
+            value:`このホームページを創りました．
+            bootstrapを組み合わせました．`
           },
           {
             key: 'JavaScript',
@@ -46,7 +48,8 @@
           {
             key: 'Others',
             exp: '機械工学と材料工学の実験スキル',
-            value:'CAD，熱処理，引張圧縮試験，エピタキシー法，AFM，SEM(FIB)，SEM(EBSD)'
+            value:`CAD，熱処理，引張圧縮試験
+            エピタキシー法，AFM，SEM(FIB)，SEM(EBSD)`
           }
 
         ]
@@ -57,11 +60,29 @@
 
 <style scoped>
 
+h1 {
+  font-size: 50px;
+  margin-top: 50px;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 100;
+  text-align: left;
+  padding-left: 350px;
+}
+
 h2 {
   font-size: 30px;
   color: rgba(9,1,95);
-  font-weight: bold;
+  font-family: 'Raleway',sans-serif;
 }
+
+h4{
+  font-size: 20px;
+  font-family: 'M PLUS Rounded 1c';
+}
+div.p {
+  white-space: pre;
+}
+
 .container {
   margin-top: 100px;
   display: grid;
