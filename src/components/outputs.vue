@@ -1,61 +1,66 @@
 <template>
-  <div v-if="currentSlide === 0" class="picture0"></div>
-  <div v-else-if="currentSlide === 1" class="picture1"></div>
-  <div v-else-if="currentSlide === 2" class="picture2"></div>
+      <nav class="navbar-expand-lg navbar-dark bg-dark">
+          <div class="container">
+              <!-- pc -->
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav mx-auto">
+                      <li class="nav-item">
+                          <router-link class="nav-link px-4 py-3" to="/">Home</router-link>
+                      </li>
+                      <li class="nav-item">
+                          <router-link class="nav-link px-4 py-3" to="/about">About</router-link>
+                      </li>
+                      <li class="nav-item">
+                          <router-link class="nav-link px-4 py-3" to="/outputs">outputs</router-link>
+                      </li>
+                      <li class="nav-item">
+                          <router-link class="nav-link px-4 py-3" to="/skills">Intern Experience</router-link>
+                      </li>
+                      <li class="nav-item">
+                          <router-link class="nav-link px-4 py-3" to="/post">Portfolio</router-link>
+                      </li>
 
+                  </ul>
+              </div>
+            </div>
+          </nav>
 </template>
 
 <script>
-  export default {
-    name: 'Output',
-    data () {
-      return {
-        currentSlide: 0,
-      };
 
-    }
-  }
 </script>
 
 <style scoped>
-
-div.output {
-  text-align: center;
+nav {
+    height: 56px;
 }
-
-div.content {
-  background-color: #eee;
-  display: inline-block;
-  margin: 10px;
-  width: 30%;
+.nav-link:hover {
+    background-color: rgba(65,184,131,0.5);
+    transition: 0.5s;
 }
-
-h3 {
-  color: white;
+.sp {
+    display: none;
 }
-
-p {
-  width: 90%;
-  display: inline-block;
-  text-align: left;
+@media screen and (max-width:800px){
+    .collapse {
+        display: none;
+    }
+    .sp {
+        display: block;
+    }
+    nav {
+    height: 80px;
+    }
+    ul {
+        overflow: hidden;
+    }
+    ul li {
+        float: left;
+        list-style: none;
+    }
+    .ancar {
+        display: block;
+        padding: 4px 4px;
+    }
 }
-
-.picture0 {
-  width: 1000px;
-  height: 5000px;
-  background-color: black;
-}
-
-.picture1 {
-  width: 1000px;
-  height: 5000px;
-  background-color: red;
-}
-
-.picture2 {
-  width: 1000px;
-  height: 5000px;
-  background-color: green;
-}
-
 </style>

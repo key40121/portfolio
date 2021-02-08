@@ -15,7 +15,7 @@
         skills : [
           {
             key: 'Python',
-            value: 'アルゴリズムとデータ構造を学びました',
+            value: 'アルゴリズムとデータ構造を学びました.Djangoについても学んでいます．',
           },
           {
             key: 'C,C++',
@@ -23,7 +23,7 @@
           },
           {
             key: 'HTML & CSS & JavaScript',
-            value:'このホームページを創りました'
+            value:'このホームページを創りました．Vue.jsとbootstrapを組み合わせました．'
           },
           {
             key: 'JavaScript',
@@ -31,7 +31,7 @@
           },
           {
             key: 'others',
-            value:'CAD,旋盤フライス盤,引張圧縮試験,エピタキシー法,AFD,SEM(FIB)できます'
+            value:'機械工学と材料工学の実験スキルです．CAD，熱処理，引張圧縮試験，エピタキシー法，AFD，SEM(FIB)，SEM(EBSD)できます'
           }
 
         ]
