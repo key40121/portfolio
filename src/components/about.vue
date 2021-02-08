@@ -1,15 +1,17 @@
 <template>
   <div class="about">
-    <h1>About me</h1>
+    <h1 id="about">About me</h1>
 
     <div class="container">
 
+<!-- left side -->
     <div class="left">
       <img src="@/assets/profile-pic1.png" width='300'>
+
     </div>
 
     <div class="right">
-      <div class="content" v-for="i in 6" :key=i>
+      <div class="content" v-for="i in 3" :key=i>
         <h3>{{ name }}</h3>
         <p>{{ text }}</p>
       </div>
@@ -42,6 +44,14 @@ div.content {
   display: inline-block;
   margin: 10px;
   width: 30%;
+}
+
+#about {
+  top: 74px;
+}
+
+div.left {
+  float: left;
 }
 
 h3 {
