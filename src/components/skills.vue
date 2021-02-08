@@ -1,15 +1,21 @@
 <template>
-  <div class="container">
+
+  <div class="skills">
+
+    <h1>skills</h1>
+
+    <div class="container">
 
 
     <div class="content" v-for="(skill, index) in skills":key="index">
-      <h3>{{ skill.key }}</h3>
+      <h2>{{ skill.key }}</h2>
+      <h4>{{ skill.exp }}</h4>
       <p>{{ skill.value }}</p>
     </div>
 
 
+  </div>
 </div>
-
 </template>
 
 <script>
@@ -20,6 +26,7 @@
         skills : [
           {
             key: 'Python',
+            exp: 'Django, 機械学習',
             value: 'アルゴリズムとデータ構造を学びました.　Django，機械学習についても学んでおり，アプリ作成中です．',
           },
           {
@@ -28,15 +35,18 @@
           },
           {
             key: 'HTML & CSS',
+            exp: 'Bootstrap4',
             value:'このホームページを創りました．　bootstrapを組み合わせました．'
           },
           {
             key: 'JavaScript',
-            value:'このホームページを創りました.　Vue.jsを使いました'
+            exp: 'Vue.js',
+            value:'このホームページを創りました.　Vue.jsを使いました.'
           },
           {
-            key: 'others',
-            value:'機械工学と材料工学の実験スキルです．CAD，熱処理，引張圧縮試験，エピタキシー法，AFM，SEM(FIB)，SEM(EBSD)'
+            key: 'Others',
+            exp: '機械工学と材料工学の実験スキル',
+            value:'CAD，熱処理，引張圧縮試験，エピタキシー法，AFM，SEM(FIB)，SEM(EBSD)'
           }
 
         ]
@@ -47,22 +57,39 @@
 
 <style scoped>
 
-
+h2 {
+  font-size: 30px;
+  color: rgba(9,1,95);
+  font-weight: bold;
+}
 .container {
   margin-top: 100px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-auto-rows: 200px 200px;
-  grid-gap: 30px;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
+  box-sizing: border-box;
 }
 
 .content {
     color: black;
-    border-radius: 5px;
-    background: #55B3B1;
-    border: 2px solid rgb(79,185,227);
+    border: 1px solid #E2E9ED;
+    background: white;
     padding: 1em;
 }
 
+.content:hover{
+  z-index: 1;
+  border: 1px solid rgba(9,1,95);
+  box-shadow: 0 8px 50px rgba(#000, 0.2);
+  transform: scale(1.05);
+  transition: box-shadow 0.2s ease,
+              transform 0.2s ease,
+              z-index 0s 0s ease;
+  padding: 1em;
+}
+
+p{
+  text-align: center;
+}
 </style>
