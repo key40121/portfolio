@@ -8,6 +8,22 @@ function resolve (dir) {
   return path.join(__dirname, '..', dir)
 }
 
+const GoogleFontsPlugin = require("google-fonts-webpack-plugin")
+
+module.exports = {
+    "entry": "index.js",
+    /* ... */
+    plugins: [
+        new GoogleFontsPlugin({
+            fonts: [
+                { family: "M PLUS Rounded 1c" },
+                { family: "Raleway"}
+            ]
+        })
+    ]
+}
+
+
 const createLintingRule = () => ({
   test: /\.(js|vue)$/,
   loader: 'eslint-loader',
