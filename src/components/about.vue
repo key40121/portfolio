@@ -7,6 +7,12 @@
 <!-- left side -->
     <div class="left">
       <img src="@/assets/profile-pic1.png" width='300'>
+      <div class="website">
+        <a class="aaa" href="https://qiita.com/key4_0121" target="_blank">Qiita</a>
+        <a class="aaa" href="https://github.com/key40121" target="_blank">Github</a>
+        <a class="aaa" href="https://www.facebook.com/taichi.ichisawa/" target="_blank">Facebook</a>
+      </div>
+      </div>
 
 
     </div>
@@ -30,20 +36,20 @@
       return {
         abouts : [
         {
-        name: 'Name',
-        text: 'Taichi Ichisawa'
+        name: '・Name',
+        text: 'Taichi Ichisawa',
       },
       {
-        name: 'Education',
+        name: '・Education',
         text: `2019-Now
         Tokyo Institute of Technology
           Dept. of Materials Science and Engineering`,
         text2: `2015-2019
         Yokohama National University
-          Dept`
+          Dept. of Mechanical Engineering and Materials Science`
       },
       {
-        name: 'Skills and Languages',
+        name: '・Skills and Languages',
         text: 'TOEIC 975(L490 R485), 基本情報技術者'
       }
       ]
@@ -53,6 +59,7 @@
 </script>
 
 <style scoped>
+/*
 h1 {
   font-size: 50px;
   margin-top: 50px;
@@ -66,7 +73,12 @@ div.output {
 }
 
 .container{
-  margin-top: 80px;
+  margin-top: 20px;
+  display: flex;
+}
+
+.flex-container{
+  justify-content: center;
 }
 
 h3.key{
@@ -85,17 +97,21 @@ p.value{
 
 div.left {
   float: left;
-  padding-left: 200px;
+  padding-left: 150px;
+  margin-right: 100px;
+  margin-top: 100px;
 }
 
 div.right{
   padding-right: 200px;
   padding-top: 30px;
   float: right;
+  margin-left: 100px;
 }
 
 h3 {
   color: black;
+  font-size: 24px;
 }
 
 p {
@@ -104,4 +120,9 @@ p {
   text-align: left;
 }
 
+a.aaa {
+  text-decoration: none;
+  color: black;
+}
+*/
 </style>
