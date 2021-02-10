@@ -1,6 +1,6 @@
 <template>
   <div class="about">
-    <h1 id="about">About me</h1>
+    <h1 class="line">About me</h1>
 
     <div class="container">
 
@@ -14,9 +14,6 @@
       </div>
       </div>
 
-
-    </div>
-
     <div class="right">
       <div class="content"  v-for="(about, index) in abouts":key="index">
         <h3 class="key">{{ about.name }}</h3>
@@ -25,7 +22,7 @@
       </div>
     </div>
 
-  </div>
+    </div>
   </div>
 </template>
 
@@ -59,6 +56,61 @@
 </script>
 
 <style scoped>
+/*
+#about {
+  border: 0;
+  height: 3px;
+  background-color: #f57e3a;
+  width: 166px;
+}*/
+
+h1.class {
+  border-bottom: thin;
+}
+
+
+.container {
+  display: grid;
+  margin:0;padding:0;
+  margin-top: 50px;
+  gap: 10px;
+  grid-template-columns: 2fr 1fr;
+}
+
+.website {
+  margin-top: 20px;
+}
+
+
+h3{
+  text-align: left;
+  font-size: 24px;
+}
+p{
+  text-align: center;
+}
+p.value{
+  white-space: pre;
+  text-align: left;
+  padding-left: 20px;
+}
+
+a.aaa {
+  text-decoration: none;
+  color: black;
+  font-size: 24px;
+}
+a.aaa:hover{
+  color: Blue;
+  font-size: bold;
+}
+
+@media(max-width: 400px){
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}
+
 /*
 h1 {
   font-size: 50px;
