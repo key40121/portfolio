@@ -27,7 +27,7 @@
           {
             key: 'Python',
             exp: 'Django, 機械学習',
-            value: `アルゴリズムとデータ構造を学びました.　
+            value: `講義や研究での計算などを通じて一番使っている言語です.　
             Django，機械学習についても学んでおり，アプリ作成中です．`,
           },
           {
@@ -62,7 +62,6 @@
 
 h1 {
   font-size: 50px;
-  margin-top: 50px;
   font-family: 'Raleway', sans-serif;
   font-weight: 100;
   text-align: left;
@@ -71,7 +70,7 @@ h1 {
 
 h2 {
   font-size: 30px;
-  color: rgba(9,1,95);
+  color: #AF0069;
   font-family: 'Raleway',sans-serif;
 }
 
@@ -84,7 +83,7 @@ div.p {
 }
 
 .container {
-  margin-top: 100px;
+  margin-top: 50px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-auto-rows: 200px 200px;
@@ -101,7 +100,7 @@ div.p {
 
 .content:hover{
   z-index: 1;
-  border: 1px solid rgba(9,1,95);
+  border: 1px solid #AF0069;
   box-shadow: 0 8px 50px rgba(#000, 0.2);
   transform: scale(1.05);
   transition: box-shadow 0.2s ease,

@@ -1,11 +1,61 @@
 <template>
-
+  <div class="posts">
+    <div class="content" v-for="(post, index) in outputs":key="index">
+      <a class="URL" v-bind:href="`https://qiita.com/key4_0121/items/${post.url}`" target="_blank">{{ post.name }}</a>
+      <p>{{ post.text }}</p>
+    </div>
+  </div>
 </template>
 
 <script>
-
+  export default {
+    name: 'Output',
+    data () {
+      return {
+        outputs : [
+          {
+            name: 'このportfolio',
+            text: 'Vue.jsを用いて作成しました',
+            url: '3f031deed576416ce274'
+          }
+      ]}
+    }
+  }
 </script>
 
 <style scoped>
+
+.posts{
+  margin: 0 auto;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  height: 300px;
+  width: 80%;
+}
+
+.URL {
+  color: #55B3B1;
+  text-decoration: none;
+}
+
+.content {
+    color: black;
+    border: 1px solid #E2E9ED;
+    background: white;
+    padding: 1em;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.content:hover{
+  z-index: 1;
+  border: 1px solid #55B3B1;
+  box-shadow: 0 8px 50px rgba(#000, 0.2);
+  transform: scale(1.05);
+  transition: box-shadow 0.2s ease,
+              transform 0.2s ease,
+              z-index 0s 0s ease;
+  padding: 1em;
+}
 
 </style>
