@@ -69,17 +69,20 @@ h1 {
 }
 
 h2 {
-  font-size: 30px;
+  font-size: 24px;
   color: #AF0069;
   font-family: 'Raleway',sans-serif;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 h4{
-  font-size: 20px;
+  font-size: 16px;
   font-family: 'M PLUS Rounded 1c';
 }
 div.p {
   white-space: pre;
+  font-size: 16px;
 }
 
 .container {

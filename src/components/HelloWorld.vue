@@ -1,6 +1,14 @@
 <template>
-  <div class="hello">
-    <h1>Welcome to my page</h1>
+  <div class="top">
+
+    <div class="hello">
+      <h1>Welcome to my page</h1>
+
+    </div>
+
+    <div class="topimage">
+    </div>
+
   </div>
 </template>
 
@@ -13,5 +21,6 @@
 h1, h2 {
   font-weight: normal;
 }
+
 
 </style>
