@@ -21,7 +21,7 @@ export default {
 
 template{margin:0px;}
 #app {
-  font-family: 'Raleway', sans-serif;
+  font-family: 'M PLUS Rounded 1c', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;

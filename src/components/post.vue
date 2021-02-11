@@ -40,6 +40,7 @@
 .URL {
   color: rgba(9,1,95);
   text-decoration: none;
+  font-size: 24px;
 }
 
 .content {
@@ -60,6 +61,13 @@
               transform 0.2s ease,
               z-index 0s 0s ease;
   padding: 1em;
+}
+
+@media(max-width: 1000px){
+  .container {
+    grid-template-columns: 1fr;
+    float: none;
+  }
 }
 
 </style>
