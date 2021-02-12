@@ -51,7 +51,7 @@ h2{
 
 @media(max-width: 1000px){
   .top-wrapper {
-    padding: 350px 0 350px 0;
+    padding: 350px 0 250px 0;
   }
   h1{
     font-size: 32px;
