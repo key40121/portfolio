@@ -1,6 +1,6 @@
 <template>
   <div class="about">
-    <h1 class="line">About me</h1>
+
 
     <div class="container">
 
@@ -56,13 +56,7 @@
 </script>
 
 <style scoped>
-/*
-#about {
-  border: 0;
-  height: 3px;
-  background-color: #f57e3a;
-  width: 166px;
-}*/
+
 
 h1.class {
   border-bottom: thin;
@@ -71,10 +65,11 @@ h1.class {
 
 .container {
   display: grid;
-  margin:0;padding:0;
+  padding:0;
   margin-top: 50px;
   gap: 10px;
   grid-template-columns: 2fr 1fr;
+  text-align: center;
 }
 
 .website {
@@ -86,9 +81,11 @@ h3{
   text-align: left;
   font-size: 24px;
 }
+
 p{
   text-align: center;
 }
+
 p.value{
   white-space: pre;
   text-align: left;
@@ -105,76 +102,13 @@ a.aaa:hover{
   font-size: bold;
 }
 
-@media(max-width: 400px){
-  .grid {
+@media(max-width: 1000px){
+  .container {
     grid-template-columns: 1fr;
+    float: none;
   }
 }
 
-/*
-h1 {
-  font-size: 50px;
-  margin-top: 50px;
-  font-family: 'Raleway', sans-serif;
-  font-weight: 100;
-  text-align: left;
-  padding-left: 350px;
-}
-div.output {
-  text-align: center;
-}
 
-.container{
-  margin-top: 20px;
-  display: flex;
-}
 
-.flex-container{
-  justify-content: center;
-}
-
-h3.key{
-  float:left;
-}
-
-p.value{
-  float: right;
-  padding-bottom: 30px;
-  white-space: pre;
-}
-
-#about {
-  top: 74px;
-}
-
-div.left {
-  float: left;
-  padding-left: 150px;
-  margin-right: 100px;
-  margin-top: 100px;
-}
-
-div.right{
-  padding-right: 200px;
-  padding-top: 30px;
-  float: right;
-  margin-left: 100px;
-}
-
-h3 {
-  color: black;
-  font-size: 24px;
-}
-
-p {
-  width: 90%;
-  display: inline-block;
-  text-align: left;
-}
-
-a.aaa {
-  text-decoration: none;
-  color: black;
-}
-*/
 </style>

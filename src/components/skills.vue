@@ -2,8 +2,6 @@
 
   <div class="skills">
 
-    <h1>skills</h1>
-
     <div class="container">
 
 
@@ -60,26 +58,20 @@
 
 <style scoped>
 
-h1 {
-  font-size: 50px;
-  font-family: 'Raleway', sans-serif;
-  font-weight: 100;
-  text-align: left;
-  padding-left: 350px;
-}
 
 h2 {
-  font-size: 30px;
+  font-size: 24px;
   color: #AF0069;
-  font-family: 'Raleway',sans-serif;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 h4{
-  font-size: 20px;
-  font-family: 'M PLUS Rounded 1c';
+  font-size: 16px;
 }
 div.p {
   white-space: pre;
+  font-size: 16px;
 }
 
 .container {
@@ -112,4 +104,12 @@ div.p {
 p{
   text-align: center;
 }
+
+@media(max-width: 1000px){
+  .container {
+    grid-template-columns: 1fr;
+    float: none;
+  }
+}
+
 </style>
