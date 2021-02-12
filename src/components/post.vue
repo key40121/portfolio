@@ -19,8 +19,9 @@
             url: '3f031deed576416ce274'
           },
           {
-            name: 'フロントエンドの勉強のためにポートフォリオ作ってみた',
-            text: 'このホームページの作成の経過をまとめました．'
+            name: 'Google FontsをVue.jsで使用する',
+            text: 'webフォントの使用としてGoogleFontsについてVue.jsでの使い方を書きました．',
+            url: '0d716818fd3fb1958be6'
           }
       ]}
     }
