@@ -17,7 +17,8 @@ module.exports = {
         new GoogleFontsPlugin({
             fonts: [
                 { family: "M PLUS Rounded 1c" },
-                { family: "Raleway"}
+                { family: "Raleway" },
+                { family: "Hanalei" }
             ]
         })
     ]

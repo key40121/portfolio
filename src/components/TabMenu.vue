@@ -1,33 +1,36 @@
 <template>
 
-        <nav class="navbar-expand-lg navbar-dark bg-dark">
-            <div class="container">
-                <!-- pc -->
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav mx-auto">
+<nav class="navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+  <!-- pc -->
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mx-auto">
 
-                      <li class="nav-item "v-for="(item, index) in items" :key=index>
-                         <router-link class="nav-link px-4 py-3" v-bind:to=item.path>
-                            {{ item.title }}
-                         </router-link>
+          <li class="nav-item "v-for="(item, index) in items" :key=index>
+              <router-link class="nav-link px-4 py-3" v-bind:to=item.path>
+                  {{ item.title }}
+              </router-link>
 
-                        </li>
-                    </ul>
-                </div>
-              </div>
-            </nav>
+          </li>
+        </ul>
+      </div>
 
-<!--
-  <header>
-    <ol>
-      <li v-for="(item, index) in items" :key=index>
-         <router-link v-bind:to=item.path>
-            {{ item.title }}
-         </router-link>
-      </li>
-    </ol>
-  </header>
--->
+      <!-- sp -->
+      <ul class="sp px-5">
+
+        <li class="nav "v-for="(item, index) in items" :key=index>
+
+          <router-link class="ancar text-white" v-bind:to=item.path>
+              {{ item.title }}
+          </router-link>
+
+        </li>
+      </ul>
+
+    </div>
+</nav>
+
+
 </template>
 
 <script>
@@ -36,11 +39,11 @@ export default {
   data () {
     return {
       items: [
-        { title: 'top', path: '/' },
-        { title: 'about', path: '/about' },
-        { title: 'skills', path: '/skills' },
-        { title: 'outputs', path: '/outputs' },
-        { title: 'posts', path: '/post'}
+        { title: 'Top', path: '/' },
+        { title: 'About', path: '/about' },
+        { title: 'Skills', path: '/skills' },
+        { title: 'Outputs', path: '/outputs' },
+        { title: 'Posts', path: '/post'}
       ]
 
     }
@@ -60,26 +63,40 @@ nav {
 .sp {
     display: none;
 }
-@media screen and (max-width:800px){
-    .collapse {
+
+@media(max-width:1000px){
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.collapse {
         display: none;
-    }
-    .sp {
+}
+
+.sp {
         display: block;
-    }
-    nav {
-    height: 80px;
-    }
-    ul {
-        overflow: hidden;
-    }
-    ul li {
+}
+
+nav {
+  height: 50px;
+}
+
+ul {
+    overflow: hidden;
+    text-align: center;
+  }
+
+ul li {
         float: left;
         list-style: none;
-    }
-    .ancar {
+}
+
+.ancar {
         display: block;
         padding: 4px 4px;
-    }
+}
+
 }
 </style>

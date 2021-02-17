@@ -14,7 +14,7 @@
       return {
         outputs : [
           {
-            name: 'このportfolio',
+            name: 'Portfolio',
             text: 'Vue.jsを用いて作成しました',
             url: '3f031deed576416ce274'
           }
@@ -31,11 +31,13 @@
   margin-bottom: 100px;
   height: 300px;
   width: 80%;
+  font-family: 'Hanalei', sans-serif;
 }
 
 .URL {
   color: #55B3B1;
   text-decoration: none;
+  font-size: 24px;
 }
 
 .content {
@@ -56,6 +58,13 @@
               transform 0.2s ease,
               z-index 0s 0s ease;
   padding: 1em;
+}
+
+@media(max-width: 1000px){
+  .container {
+    grid-template-columns: 1fr;
+    float: none;
+  }
 }
 
 </style>
