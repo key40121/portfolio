@@ -25,7 +25,6 @@
   margin: 0 auto;
 }
 
-
 .top-wrapper {
   padding: 350px 0 350px 0;
   background-image: url('~@/assets/sf2.jpg');
@@ -73,13 +72,5 @@ h2{
     font-size: 12px;
   }
 }
-
-/*
-.hello {
-background-image: url('~@/assets/sf1.jpg');
-  background-image: url('~@/assets/sf1.jpg');
-  background-size: cover;
-}*/
-
 
 </style>
