@@ -1,7 +1,7 @@
 <template>
   <div class="posts">
     <div class="content" v-for="(post, index) in outputs":key="index">
-      <a class="URL" v-bind:href="`https://qiita.com/key4_0121/items/${post.url}`" target="_blank">{{ post.name }}</a>
+      <a class="URL" v-bind:href="`${post.url}`" target="_blank">{{ post.name }}</a>
       <p>{{ post.text }}</p>
     </div>
   </div>
@@ -16,7 +16,7 @@
           {
             name: 'Portfolio',
             text: 'Vue.jsを用いて作成しました',
-            url: '3f031deed576416ce274'
+            url: 'https://key40121.github.io/portfolio/#/'
           }
       ]}
     }
