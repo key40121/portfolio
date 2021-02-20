@@ -1,19 +1,30 @@
 <template>
-  <div class="top-wrapper">
+
+    <div class="top-wrapper" :style="cssProps">
 
     <div class="container">
 
     <div class="hello">
+
       <h1>Welcome to My Website</h1>
       <h2>by Taichi Ichisawa</h2>
     </div>
 
     </div>
   </div>
+
 </template>
 
 <script>
-
+export default {
+  data() {
+    return {
+      cssProps: {
+        backgroundImage: `url(${require('@/assets/sf2.jpg')})`
+      }
+    }
+  }
+}
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
@@ -26,8 +37,9 @@
 }
 
 .top-wrapper {
-  padding: 350px 0 350px 0;
-  background-image: url('~@/assets/sf2.jpg');
+  padding: 400px 0 400px 0;
+  /*background-image: url('~@/assets/sf2.jpg');*/
+  /*background-image: url("/image/sf2.jpg"); */
   background-size: cover;
   color: white;
   text-align: center;
